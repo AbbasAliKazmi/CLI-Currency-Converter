@@ -49,8 +49,11 @@ async function convertCurrency() {
                 name: 'amount',
                 message: chalk.bgGrey.bold('Enter the amount to convert:'),
                 validate: (value) => {
-                    const parsedValue = parseFloat(value);
-                    return !isNaN(parsedValue) && parsedValue >= 0;
+                    // Check if the input contains only digits
+                    if (/^\d+(\.\d+)?$/.test(value)) {
+                        return true;
+                    }
+                    return 'Please enter a valid numeric amount.';
                 },
             },
             {
