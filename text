@@ -1,0 +1,58 @@
+// // const sleep = () => {
+// //     return new Promise((res) => {
+// //         setTimeout(res, 2000);
+// //     })
+// // }
+
+// // async function welcome() {
+// //     let pulseAnimation = chalkAnimation.radar('Welcome to Your Todo,s');
+// //     await sleep();
+// //     pulseAnimation.stop();
+// //     console.log(`
+
+// //     .d8888b8  88  8888  88d8888  88d888  .d88b.  88888b.     .d8888b    888  888 
+// //     d88P"     888  888  888P"    888P"  d8P  Y8b  888 "88b   d88P"      888  888 
+// //     888       888  888  888      888    88888888  888  888   888        888  888 
+// //     Y88b.     Y88b 888  888      888    Y8b.      888  888   Y88b.      Y88b 888 
+// //      "Y8888P   "Y88888  888      888     "Y8888   888  888    "Y8888P    "Y88888 
+// //                                                                             888 
+// //                                                                        Y8b d88P 
+// //                                                                         "Y88P"  
+
+// //  `)
+// // }
+
+// // await welcome();
+
+
+// //********************Code 2  */
+
+
+// const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+// async function welcome() {
+//   const message = 'Welcome to Your Currency Exchanger';
+//   const frames = ['-', '\\', '|', '/'];
+  
+//   let i = 0;
+//   const animation = setInterval(() => {
+//     const frame = frames[i];
+//     process.stdout.write(`\r${(frame)} ${message}`);
+//     i = (i + 1) % frames.length;
+//   }, 250);
+
+//   await sleep(3000); 
+//   clearInterval(animation);
+//   console.log(`\n
+//       .d8888b8  88  8888  88d8888  88d888  .d88b.  88888b.     .d8888b    888  888 
+//      d88P"     888  888  888P"    888P"  d8P  Y8b  888 "88b   d88P"      888  888 
+//      888       888  888  888      888    88888888  888  888   888        888  888 
+//      Y88b.     Y88b 888  888      888    Y8b.      888  888   Y88b.      Y88b 888 
+//       "Y8888P   "Y88888  888      888     "Y8888   888  888    "Y8888P    "Y88888 
+//                                                                              888 
+//                                                                         Y8b d88P 
+//                                                                          "Y88P"  
+//   `);
+// }
+
+// welcome();
